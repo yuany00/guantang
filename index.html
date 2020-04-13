@@ -1,0 +1,147 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1600px, initial-scale=1.0, user-scalable = no" />
+<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="lib/turn.min.js"></script>
+
+
+</head>
+<body >
+
+
+
+<div class="bg-object" >
+	<img src="pages/bird.gif" alt= "bird" style="position:absolute;width:400px;height: 438px; left:30px; top: 20px;">
+	<img src="pages/yinzhang.gif" alt="yinzhang"style="position:relative; width: 100px;height: 100px;left:20px;top:700px;">
+	<img src="cover/cloud3.gif" alt="cloud top" style="position:relative;top:20px;left:1000px;">
+	<img src="cover/cloud2.gif" alt="cloud top" style="position:absolute;top:30px;left:500px;">
+	<img src="pages/cloud right.png" alt="cloud right" style="position:relative;top:750px;left:900px;">
+	<img src="pages/cloud1.gif" alt="cloud left" style="position:absolute;top:350px;left:50px;">
+
+
+	<div class="text" style="position:absolute;left:300px;top:250px;display:block;">
+		<h1>The Fashion of Tang Dynasty</h1>
+
+		<p class="intro" style="position:relative;left:10px;top:30px;width: 350px;font-size: 20px;text-align: justify;text-indent: 50px;">Dunhuang frescoes are the main components of Dunhuang art. They are rich in content, huge in scale, and exquisite in skill. In particular, there is a kind of murals called donors in the frescoes, which have unique artistic value and research value. It is the donors in these murals that have been handed down from generation to generation, digging into grottoes, building Buddha statues, and painting murals, and finally created the brilliant Dunhuang culture. Due to its completeness and continuity, Dunhuang frescoes have become an important historical material for studying Tang Dynasty costumes.</p>
+	</div>
+
+</div>
+
+
+
+<div class="bgmusic">
+
+<audio src="liuguang.mp3" preload="meta" loop autoplay id="bgmusic"></audio>
+<img src="cover/stop.png" id="musicImg" alt="user" style="width: 50px; height:50px; right:20px; top:20px; position: fixed;">
+<div class="hover">
+	<img src="cover/shadow.gif" onClick="playnpause()" alt="user" style="width: 55px; height:55px; right:18px; top:18px; position: fixed;">
+
+</div>
+
+</div>
+
+
+
+<div class="flipbook-viewport" >
+	<div class="container" id='container'>
+		<div class="flipbook">
+			<div class="page" style="background-image:url(pages/cover-front.png)"></div>
+			<div class="page" style="background-image:url(pages/odd.png)">
+				<img src="pages/1.gif" alt= "bird" style="position:absolute;width: 200px;height: 200px;top:50px;left:50px;" >
+				<img src="pages/yinzhang.gif" alt="yinzhang"style="position:absolute;width: 100px;height: 100px;bottom:10px;left:0px;">
+				
+				<p class="intro" style="position:absolute;left:300px;top:50px;">content.......</p>
+			</div>
+			<div class="page" style="background-image:url(pages/even.png)">
+				<img src="pages/1.gif" alt= "bird" style="position:absolute;width: 200px;height: 200px;top:50px;left:50px;" >
+			</div>
+			<div class="page" style="background-image:url(pages/odd.png)"></div>
+			<div class="page" style="background-image:url(pages/even.png)"></div>
+			<div class="page" style="background-image:url(pages/odd.png)"></div>
+			<div class="page" style="background-image:url(pages/even.png)"></div>
+		</div>
+	</div>
+</div>
+
+<div class="bottom">
+		<div id="slider-bar" class="turnjs-slider">
+			<div id="slider"></div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	var flipbook = $('.flipbook');
+
+ 	// Check if the CSS was already loaded
+	
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}
+
+	$('.flipbook .double').scissor();
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: false
+
+	});
+}
+
+
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['lib/turn.min.js'],
+	nope: ['lib/turn.html4.min.js'],
+	both: ['lib/scissor.min.js', 'lib/zoom.min.js','css/double-page.css'],
+	complete: loadApp
+});
+
+
+window.onload = function(){ 
+     var audio = document.getElementById('bgmusic');
+     audio.pause();
+        //Mute when open
+}
+
+function playnpause() {
+    var audio = document.getElementById('bgmusic');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="cover/play.png";
+    }else{
+        audio.pause();
+        audio.currentTime = 0;//Bgm restart
+        document.getElementById('musicImg').src="cover/stop.png";
+    }
+}
+
+
+
+</script>
+
+</body>
+</html>
