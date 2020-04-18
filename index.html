@@ -191,10 +191,13 @@ function showSlides(n) {
 <div class="flipbook-viewport" >
 	<div class="book-container" id='container'>
 		<div class="flipbook">
-			<div class="page" style="background-image:url(pages/cover-front.png)"></div>
-			<div class="page" style="background-image:url(pages/odd.png)">
+			<div class="page">
+				<img  src="pages/cover-front.png" width="600" height="600" >
+			</div>
+			<div class="page" >
+				<img  src="pages/odd.png" width="600" height="600" >
 				<h2>Donor Frescoes</h2>
-				<div class="img-magnifier-window" style="left:40px;top:100px;">
+				<div class="img-magnifier-window" style="position:absolute;left:40px;top:100px;">
  					 <img id="myimage" src="pages/donor_frescoes.jpg" width="260" height="400">
 				</div>
 				
@@ -202,12 +205,13 @@ function showSlides(n) {
 				<p style="font-size:18px;position:absolute;left:50px;bottom:20px;width:250px; text-indent: 0px; border:2px solid black; background-color: white;padding: 2px;">Move the <b>len</b> on the bottom left corner. Can you find the<b> Donor</b>?</p>
 
 			</div>
-			<div class="page" style="background-image:url(pages/even.png)">
+			<div class="page" >
+				<img  src="pages/even.png" width="600" height="600" >
 				<p style="font-size:17px;position:absolute;left:150px;top:50px; width:350px;">Below the Buddhist stories frescoes, there are often men and women neatly arranged in rows, the small ones are only a few inches, and the heights are up to a few feet. Among them are powerful governors and ordinary civilians. These figures have all contributed funds for the construction of the cave. They painted their images on the wall, indicating that the Buddha statues of the cave were all supported by them, so they are called cave owners, and they are also called donors.</p>
 				<p style="font-size:17px;position:absolute;left:150px;top:300px; width:350px;">In order to devoutly worship the Buddha, always provide support and merit, and also show their own fame and retain their names for future generations. Portraits of these donors are painted in their caves. These portraits are called donor portraits. These precious portraits record the dress status of people of different identities and positions on different occasions and provide precious historical data for the restoration and recreation of Tang Dynasty costumes.</p>
-				<div class="e-column" style="top:200px;">
+				<div class="e-column" style="position:absolute;top:0px;height: 500px; overflow: hidden;">
   					<div class="e-row">
-   						 <img src="pages/donor1.jpg" alt="Donor portrait of Cao Yuande. Mogao Cave 100,10th" style="width:50%; margin-top: 50px; " onclick="myFunction(this);">
+   						 <img src="pages/donor1.jpg" alt="Donor portrait of Cao Yuande. Mogao Cave 100,10th" style="width:50%;  " onclick="myFunction(this);">
   					</div>
   					<div class="e-row">
    						 <img src="pages/donor2.jpg" alt="Donor Portrait of Caoyijin. Yulin Cave 16" style="width:50%" onclick="myFunction(this);">
@@ -228,16 +232,18 @@ function showSlides(n) {
 
 				
 			</div>
-			<div class="page" style="background-image:url(pages/odd.png)">
+			<div class="page" >
+				<img  src="pages/odd.png" width="600" height="600" >
 				<h2> Designer</h2>
 				 <img src="pages/chuyan.jpg" alt="chuyan" style="width:80%;position: absolute; bottom: 50px;left:50px;" >
 				 <p style="font-size:17px;position:absolute;left:50px;top:80px; width:450px;"><b>Chu Yan</b>, currently an associate professor at the School of Clothing Art and Engineering, Beijing Institute of Clothing Technology. She and her group have been doing research on the restoration and artistic recreation of Chinese traditional clothes along the Silk Road. From analyzing and measuring the antiques to drawing, dyeing, weaving, pattern making, and sewing, she eventually recreated costumes of Tang, which lead us to revisit the open, confident and integrating prosperous period of the Tang Dynasty.</p>
                
            </div>
-			<div class="page" style="background-image:url(pages/even.png)">
+			<div class="page" >
+							<img  src="pages/even.png" width="600" height="600" >
 							<h2>Plant Dyestuff</h2>
 				
-							<div class="image-gallery-window"  style="width: 400px; height:300px;overflow:hidden;top:80px;left:80px;">
+							<div class="image-gallery-window"  style="position:absolute;width: 400px; height:300px;overflow:hidden;top:80px;left:80px;">
 							  <div class="mySlides">
 							    <div class="numbertext">1 / 6</div>
 							    <div class="image-frame" >
@@ -311,9 +317,10 @@ function showSlides(n) {
 
 
 			</div>
-			<div class="page" style="background-image:url(pages/odd.png)">
+			<div class="page" >
+				<img  src="pages/odd.png" width="600" height="600" >
 				<h2>Female Donor Costumes</h2>
-				<div class="img-magnifier-window" style="left:40px;top:80px;">
+				<div class="img-magnifier-window" style="position:absolute;left:40px;top:80px;">
  					 <img id="myimage1" src="pages/Female-Donor-Portrait-on-the-east-wall-in-Mogao-Cave-98-restore1.png" width="200">
 				</div>
 				<p style="font-size:16px;position:absolute;left:40px;bottom:20px;width:200px; text-indent: 0px; border:2px solid black; background-color: white;padding: 2px; text-align: left;">Female Donor Portrait on the east wall in Mogao Cave 98, Five Dynasties (AD 907-960)</p>
@@ -322,7 +329,8 @@ function showSlides(n) {
 				<img src="pages/wudai.png" alt="tag2" style="position:absolute;bottom:20px;right:0px;width: 150px">
 				
 			</div>
-			<div class="page" style="background-image:url(pages/even.png)">
+			<div class="page" >
+				<img  src="pages/even.png" width="600" height="600" >
 				<div class="img-magnifier-window" style="position:absolute;left:40px;top:80px;">
  					 <img id="myimage2" src="pages/Female-Donor-Portrait-on-the-east-wall-in-Mogao-Cave-98-recreation.JPG" height="400">
 				</div>
@@ -331,8 +339,9 @@ function showSlides(n) {
 				<img src="pages/tag.png" alt="tag2" style="position:absolute;bottom:50px;right:20px;width: 500px">
 
 			</div>
-			<div class="page" style="background-image:url(pages/odd.png)">
-				<div class="img-magnifier-window" style="left:40px;top:50px;">
+			<div class="page" >
+				<img  src="pages/odd.png" width="600" height="600" >
+				<div class="img-magnifier-window" style="position: absolute;left:40px;top:50px;">
  					 <img id="myimage3" src="pages/Uyghur-Princess-in-Mogao-Cave-61.png" width="200px">
 				</div>
 				<p style="font-size:16px;position:absolute;left:40px;bottom:20px;width:200px; text-indent: 0px; border:2px solid black; background-color: white;padding: 2px; text-align: left;">Uyghur Princess in Mogao Cave 61, Five Dynasties (AD 907-960)</p>
@@ -340,7 +349,8 @@ function showSlides(n) {
 				<p style="position: absolute; top:120px;width:240px;left:280px;">Cao Yijin's wife is Uighur Princess. She was dressed in a Ukrainian costume, wearing a peach-shaped crown, decorated with a Buyao, a sling on the back, a face with a flower makeup, a neck with multiple jewelry strings, a lapel with narrow sleeves and a large sleeve, and a delicate phoenix on the lapel and cuff Beautiful bird and flower pattern. It is very rare to see such delicate and vivid textile patterns in Dunhuang frescoes.</p>
 				<img src="pages/wudai.png" alt="tag2" style="position:absolute;bottom:20px;right:0px;width: 150px">
 			</div>
-			<div class="page" style="background-image:url(pages/even.png)">
+			<div class="page" >
+				<img  src="pages/even.png" width="600" height="600" >
 
 				<div class="img-magnifier-window" style="position:absolute;left:40px;top:80px;">
  					 <img id="myimage4" src="pages/Uyghur-Princess-in-Mogao-Cave-61-recreation.JPG" height="400" >
@@ -349,8 +359,9 @@ function showSlides(n) {
 				<img src="pages/princess-body.gif" alt="female donor2" style="position:absolute;top:280px;right:80px;height: 200px;">
 				<img src="pages/tag.png" alt="tag2" style="position:absolute;bottom:50px;right:20px;width: 500px">
 			</div>
-			<div class="page" style="background-image:url(pages/odd.png)">
-				<div class="img-magnifier-window" style="left:40px;top:50px;">
+			<div class="page" >
+				<img  src="pages/odd.png" width="600" height="600" >
+				<div class="img-magnifier-window" style="position: absolute;left:40px;top:50px;">
  					 <img id="myimage5" src="pages/Female-Donor-Portrait-on-the-east-wall-in-Mogao-Cave-144.png" width="220px">
 				</div>
 				<p style="font-size:16px;position:absolute;left:40px;bottom:40px;width:200px; text-indent: 0px; border:2px solid black; background-color: white;padding: 2px; text-align: left;">Female Donor Portrait on the east wall in Mogao Cave 144, Middle Tang(AD 767-827)</p>
@@ -358,7 +369,8 @@ function showSlides(n) {
 				<p style="position: absolute; top:120px;width:240px;left:280px;">The Han women in the Tubo period still dominated by Han suits, with a hair bun on their heads, a hairpin Buyao on their hairpins, decorated with a peony flower, and wearing a wide sleeve red blouse on top, and a long green skirt on the bottom. From hair accessories to jackets, they attach great importance to the overall color matching</p>
 				<img src="pages/tang.png" alt="tag2" style="position:absolute;bottom:20px;right:20px;width: 80px">
 			</div>
-			<div class="page" style="background-image:url(pages/even.png)">
+			<div class="page" >
+				<img  src="pages/even.png" width="600" height="600" >
 				<div class="img-magnifier-window" style="position:absolute;left:40px;top:80px;">
  					 <img id="myimage6" src="pages/Female-Donor-Portrait-on-the-east-wall-in-Mogao-Cave-144.JPG" height="400" >
 				</div>
@@ -366,17 +378,19 @@ function showSlides(n) {
 				<img src="pages/female-donor-body2.gif" alt="female donor3" style="position:absolute;top:280px;right:80px;height: 200px;">
 				<img src="pages/tag.png" alt="tag2" style="position:absolute;bottom:50px;right:20px;width: 500px">
 			</div>
-			<div class="page" style="background-image:url(pages/odd.png)">
+			<div class="page">
+				<img  src="pages/odd.png" width="600" height="600" >
 				<h2>Male Donor Costumes</h2>
-				<div class="img-magnifier-window" style="left:40px;top:80px;">
- 					 <img id="myimage7" src="pages/Donor-Caoyijin1.png" width="200px">
+				<div class="img-magnifier-window" style="position: absolute;left:40px;top:80px;">
+ 					 <img id="myimage7" src="pages/Donor-CaoYijin1.png" width="200px">
 				</div>
 				<p style="font-size:16px;position:absolute;left:40px;bottom:20px;width:200px; text-indent: 0px; border:2px solid black; background-color: white;padding: 2px; text-align: left;">Donor CaoYijin on the south wall of the corridor in Yulin Cave 16, Five Dynasties(AD 907-960)</p>
 
 				<p style="position: absolute; top:120px;width:240px;left:280px;">CaoYijin wore an official hat, a red gown with a round neck and large sleeves, a lace white leno blouse, and a red leather tunic. People wearing big sleeves in five dynasties are mostly high-ranking officials, and there is no difference in official positions in other clothes styles. Red was a favorite color of senior officials during the Five Dynasties. Most of the donors of the ruling class in the five dynasties in Dunhuang frescoes wore red robes.</p>
 				<img src="pages/wudai.png" alt="tag2" style="position:absolute;bottom:20px;right:0px;width: 150px">
 			</div>
-			<div class="page" style="background-image:url(pages/even.png)">
+			<div class="page" >
+				<img  src="pages/even.png" width="600" height="600" >
 				<div class="img-magnifier-window" style="position:absolute;left:40px;top:80px;">
  					 <img id="myimage8" src="pages/Donor-CaoYijin.JPG" height="400" >
 				</div>
@@ -384,8 +398,9 @@ function showSlides(n) {
 				<img src="pages/caoyijin-body2.gif" alt="male donor1" style="position:absolute;top:280px;right:100px;height: 200px;">
 				<img src="pages/tag.png" alt="tag2" style="position:absolute;bottom:50px;right:20px;width: 500px">
 			</div>
-			<div class="page" style="background-image:url(pages/odd.png)">
-				<div class="img-magnifier-window" style="left:40px;top:100px;">
+			<div class="page" >
+				<img  src="pages/odd.png" width="600" height="600" >
+				<div class="img-magnifier-window" style="position: absolute;left:40px;top:100px;">
  					 <img id="myimage9" src="pages/Turpan-Tsenpo-in-Mogao-Cave-159.png" width="220px">
 				</div>
 				<p style="font-size:16px;position:absolute;left:40px;bottom:50px;width:220px; text-indent: 0px; border:2px solid black; background-color: white;padding: 2px; text-align: left;">Turpan Tsenpo in Mogao Cave 159</p>
@@ -393,7 +408,8 @@ function showSlides(n) {
 				<p style="position: absolute; top:120px;width:240px;left:280px;">Zampe wears a crown of Zhaoxia and a red forehead, hangs earrings. He wears a plain lapel Tibetan robe with long sleeves hanging down to the ground, a jade belt around the waist, and various ornaments on the belt. A canopy was over his head. The color of his robe reflects the custom of Tubo: they respect for plain colors.</p>
 				<img src="pages/tang.png" alt="tag2" style="position:absolute;bottom:20px;right:20px;width: 80px">
 			</div>
-			<div class="page" style="background-image:url(pages/even.png)">
+			<div class="page" >
+				<img  src="pages/even.png" width="600" height="600" >
 				<div class="img-magnifier-window" style="position:absolute;left:40px;top:80px;">
  					 <img id="myimage10" src="pages/tubo.JPG" height="400" >
 				</div>
@@ -401,8 +417,9 @@ function showSlides(n) {
 				<img src="pages/tubo-body1.gif" alt="male donor2" style="position:absolute;top:280px;right:100px;height: 200px;">
 				<img src="pages/tag.png" alt="tag2" style="position:absolute;bottom:50px;right:20px;width: 500px">
 			</div>
-			<div class="page" style="background-image:url(pages/odd.png)">
-				<div class="img-magnifier-window" style="left:40px;top:100px;">
+			<div class="page" >
+				<img  src="pages/odd.png" width="600" height="600" >
+				<div class="img-magnifier-window" style="position: absolute;left:40px;top:100px;">
  					 <img id="myimage11" src="pages/WesternXiaKing.jpg" width="250px">
 				</div>
 				<p style="font-size:16px;position:absolute;left:40px;bottom:50px;width:250px; text-indent: 0px; border:2px solid black; background-color: white;padding: 2px; text-align: left;">Western Xia King Donor Portrait in Mogao Cave 409</p>
@@ -411,7 +428,8 @@ function showSlides(n) {
 				<img src="pages/xixia.png" alt="tag2" style="position:absolute;bottom:20px;right:20px;width: 200px">
 
 			</div>
-			<div class="page" style="background-image:url(pages/even.png)">
+			<div class="page" >
+				<img  src="pages/even.png" width="600" height="600" >
 				<div class="img-magnifier-window" style="position:absolute;left:40px;top:80px;">
  					 <img id="myimage12" src="pages/xixiaking.JPG" height="400" >
 				</div>
