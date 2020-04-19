@@ -100,7 +100,7 @@ body{
 
 
 .flipbook-viewport .shadow{
-  height: 600px;
+  max-height: 600px;
   max-width: 1200px;
 	-webkit-transition: -webkit-box-shadow 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s;
