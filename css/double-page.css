@@ -33,26 +33,29 @@ body{
  	 opacity: 1;
      }
 
-
+.page-wrapper{
+  max-height: 600px;
+  max-width: 600px;
+}
 
 .flipbook-viewport{
 	
   width:1600px;
   height:600px;
    max-height: 600px;
-  max-width: 1800px;
- 
-  top:10px;
-  left:200px;
+  max-width: 1600px;
+ position: absolute;
+  top:200px;
+  left:0px;
 	
 }
 
 .flipbook-viewport .container{
 	position:absolute;
-	top:10px;
+	top:200px;
 	left:200px;
   max-height: 600px;
-  max-width: 1800px;
+  max-width: 1600px;
   overflow: hidden;
 	margin:auto;
 	flex-shrink: 0;
@@ -86,6 +89,7 @@ body{
 }
 
 .flipbook .page{
+  
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -96,6 +100,8 @@ body{
 
 
 .flipbook-viewport .shadow{
+  height: 600px;
+  max-width: 1200px;
 	-webkit-transition: -webkit-box-shadow 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s;
 	-o-transition: -webkit-box-shadow 0.5s;
