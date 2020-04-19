@@ -320,7 +320,7 @@ function showSlides(n) {
 	<div class="book-container" id='container'>
 		<div class="flipbook">
 			<div class="page">
-				<img  src="pages/cover-front.png" width="600" height="600" >
+				<img  src="pages/cover-front.png" width="600" height="600" style="position: absolute;top: 0px;right: 0px;" >
 			</div>
 			<div class="page" >
 				<img  src="pages/odd.png" width="600" height="600" >
@@ -334,10 +334,10 @@ function showSlides(n) {
 
 			</div>
 			<div class="page" >
-				<img  src="pages/even.png" width="600" height="600" >
+				<img  src="pages/even.png" width="600" height="600 " style="position: absolute;top: 0px;right: 0px;">
 				<p style="font-size:17px;position:absolute;left:150px;top:50px; width:350px;">Below the Buddhist stories frescoes, there are often men and women neatly arranged in rows, the small ones are only a few inches, and the heights are up to a few feet. Among them are powerful governors and ordinary civilians. These figures have all contributed funds for the construction of the cave. They painted their images on the wall, indicating that the Buddha statues of the cave were all supported by them, so they are called cave owners, and they are also called donors.</p>
 				<p style="font-size:17px;position:absolute;left:150px;top:300px; width:350px;">In order to devoutly worship the Buddha, always provide support and merit, and also show their own fame and retain their names for future generations. Portraits of these donors are painted in their caves. These portraits are called donor portraits. These precious portraits record the dress status of people of different identities and positions on different occasions and provide precious historical data for the restoration and recreation of Tang Dynasty costumes.</p>
-				<div class="e-column" style="position:absolute;top:20px;height: 500px; left:20px;overflow: visible;">
+				<div class="e-column" style="position:absolute;top:20px;height: 500px; left:20px;overflow: block;">
   					<div class="e-row">
    						 <img src="pages/donor1.jpg" alt="Donor portrait of Cao Yuande. Mogao Cave 100,10th" style="width:90px;  " onclick="myFunction(this);">
   					</div>
@@ -368,10 +368,10 @@ function showSlides(n) {
                
            </div>
 			<div class="page" >
-							<img  src="pages/even.png" width="600" height="600" >
+							<img  src="pages/even.png" width="600" height="600" style="position: absolute;top: 0px;right: 0px;" >
 							<h2>Plant Dyestuff</h2>
 				
-							<div class="image-gallery-window"  style="position:absolute;width: 400px; height:300px;overflow:hidden;top:80px;left:80px;">
+							<div class="image-gallery-window"  style="position:absolute;width: 400px; height:310px;overflow:hidden;top:70px;right:100px;">
 							  <div class="mySlides">
 							    <div class="numbertext">1 / 6</div>
 							    <div class="image-frame" >
@@ -578,16 +578,7 @@ function showSlides(n) {
 
 <script type="text/javascript">
 
-  
 
-//--------------------------------------
-$(window).load(function(){  
-    $('#loading_all').delay(500).hide(0);  
-    setTimeout(function(){  
-        $('body').removeClass("scoll_dis");  
-    },500);  
-});  
-   
 
 
 
@@ -620,7 +611,7 @@ function loadApp() {
 		return;
 	}
 
-	$('.flipbook .double').scissor();
+
 
 	// Create the flipbook
 
@@ -631,7 +622,7 @@ function loadApp() {
 			
 			// Enable gradients
 
-			gradients: true,
+			gradients: false,
 			
 			// Auto center this flipbook
 
