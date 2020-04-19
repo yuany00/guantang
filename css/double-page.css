@@ -34,13 +34,14 @@ body{
      }
 
 .page-wrapper{
+  overflow: hidden;
   max-height: 600px;
   max-width: 600px;
 }
 
 .flipbook-viewport{
 	
-  width:1600px;
+  width:1200px;
   height:600px;
    max-height: 600px;
   max-width: 1600px;
@@ -55,8 +56,8 @@ body{
 	top:200px;
 	left:200px;
   max-height: 600px;
-  max-width: 1600px;
-  overflow: hidden;
+  max-width: 1200px;
+  overflow: auto;
 	margin:auto;
 	flex-shrink: 0;
 
@@ -67,6 +68,7 @@ body{
   position: absolute;
   max-height: 600px;
   max-width: 1200px;
+  overflow: hidden;
 
 	width:1200px;
 	height:600px;
@@ -84,6 +86,11 @@ body{
 
 	width:600px;
 	height:600px;
+   
+  
+  
+  background-repeat:no-repeat;
+  background-size:100% 100%;
 	
 	
 }
@@ -100,8 +107,10 @@ body{
 
 
 .flipbook-viewport .shadow{
+  position: relative;
   max-height: 600px;
-  max-width: 1200px;
+  max-width: 600px;
+
 	-webkit-transition: -webkit-box-shadow 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s;
 	-o-transition: -webkit-box-shadow 0.5s;
