@@ -302,10 +302,10 @@ function showSlides(n) {
 
 <div class="bgmusic">
 
-<audio src="zheliu-bgm.mp3" preload="meta" loop autoplay id="bgmusic"></audio>
+<audio src="zheliu-bgm.mp3" preload="meta" loop  id="bgmusic"></audio>
 <img src="cover/stop.png" id="musicImg" alt="user" style="width: 50px; height:50px; right:20px; top:20px; position: fixed;">
 <div class="hover">
-	<img src="cover/shadow.gif" onClick="playnpause()" alt="user" style="width: 55px; height:55px; right:18px; top:18px; position: fixed;">
+	<img src="cover/shadow.gif" onClick="playnpause()" alt="user" style="width: 55px; height:55px; right:18px; top:18px; position: fixed; z-index: 999;">
 
 </div>
 
@@ -313,11 +313,11 @@ function showSlides(n) {
 
 
 
-<div class="flipbook-viewport" >
+<div class="flipbook-viewport">
 	<div class="book-container" id='container'>
 		<div class="flipbook">
-			<div class="page">
-				<img  src="pages/cover-front.png" width="600" height="600" style="position: absolute;top: 0px;right: 0px;" >
+			<div class="page" style="background-image:url(pages/cover-front.png)">
+				
 			</div>
 			<div class="page" >
 				<img  src="pages/odd.png" width="600" height="600" >
@@ -327,7 +327,7 @@ function showSlides(n) {
 				</div>
     
 				
-				<p style="font-size:17px;position:absolute;left:320px;top:100px; width:250px;">Dunhuang frescoes are the main components of Dunhuang art. They are rich in content, huge in scale, and exquisite in skill. They are best known of the Buddha grottoes, however, there is a kind of murals called donors in the frescoes, which have unique artistic value and research value. It is the donors in these murals that have been handed down from generation to generation, digging into grottoes, building Buddha statues, and painting murals, and finally created the brilliant and brilliant Dunhuang culture. Due to its completeness and continuity, these donor frescoes have become an important historical material for studying Tang Dynasty costumes.</p>
+				<p style="font-size:17px;position:absolute;left:320px;top:100px; width:230px;">Dunhuang frescoes are the main components of Dunhuang art. They are rich in content, huge in scale, and exquisite in skill. They are best known of the Buddha grottoes, however, there is a kind of murals called donors in the frescoes, which have unique artistic value and research value. It is the donors in these murals that have been handed down from generation to generation, digging into grottoes, building Buddha statues, and painting murals, and finally created the brilliant and brilliant Dunhuang culture. Due to its completeness and continuity, these donor frescoes have become an important historical material for studying Tang Dynasty costumes.</p>
 				<p style="font-size:18px;position:absolute;left:50px;bottom:20px;width:250px; text-indent: 0px; border:2px solid black; background-color: white;padding: 2px;">Move the <b>len</b> on the top left corner. Can you find the<b> Donor</b>?</p>
 
 			</div>
