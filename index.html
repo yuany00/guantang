@@ -264,6 +264,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
 </script>
 
 
@@ -271,12 +273,6 @@ function showSlides(n) {
 </head>
 
 <body >
-<div class="loadingio-spinner-double-ring-vd1g2d22ar"><div class="ldio-wfs9uup7r9">
-<div></div>
-<div></div>
-<div><div></div></div>
-<div><div></div></div>
-</div></div>
  
 
 
@@ -578,10 +574,6 @@ function showSlides(n) {
 
 <script type="text/javascript">
 
-
-
-
-
 magnify("myimage", 3);
 magnify("myimage1", 3);
 magnify("myimage2", 3);
@@ -598,6 +590,7 @@ magnify("myimage12", 3);//magnify
 
 var slideIndex = 1;
 showSlides(slideIndex);//slider-gallery
+
 
 
 function loadApp() {
@@ -622,7 +615,7 @@ function loadApp() {
 			
 			// Enable gradients
 
-			gradients: false,
+			gradients: true,
 			
 			// Auto center this flipbook
 
